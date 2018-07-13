@@ -4,12 +4,15 @@ module  Players
 
     def move(board)
 
+      # GAME START #
       if !board.taken?(4)
         move = "4"
+      else
+        move = "0" || "2" || "6" || "8"
+
+      elsif board.taken?()
+
       end
-
-    end
-
 
 
   end
