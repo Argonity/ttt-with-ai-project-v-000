@@ -4,7 +4,7 @@ module  Players
 
     def move(board)
 
-      # GAME START #
+      # GAME START
       if !board.taken?(5)
         move = "5"
 
@@ -12,9 +12,9 @@ module  Players
         move = "1" || "3" || "7" || "9"
 
       elsif board.turn_count == 2 # Assumes AI occupied the center cell in first move
-        move = [1, 3, 7, 9].detect{|i| !board.taken?(i)}.to_s
+        move = [1, 3, 7, 9].detect{|t| !board.taken?(t)}.to_s
       end
-      
+
   end
 
 end
