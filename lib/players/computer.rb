@@ -6,7 +6,7 @@ module  Players
 
       if !board.taken?(4)
         move = "4"
-      
+      end
 
     end
 
