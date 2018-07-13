@@ -5,16 +5,16 @@ module  Players
     def move(board)
 
       # GAME START #
-      if !board.taken?(4)
-        move = "4"
-      else
-        move = "0" || "2" || "6" || "8"
-
-      elsif board.taken?()
-
+      if !board.taken?(5)
+        move = "5"
+        
+      elsif
+        move = "1" || "3" || "7" || "9"
+      
+      elsif board.turn_count == 2
+        move = [1, 3, 7, 9].detect{|i| !board.taken?(i)}.to_s
       end
-
-
+      
   end
 
 end
