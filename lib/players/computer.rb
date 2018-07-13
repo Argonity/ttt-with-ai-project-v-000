@@ -15,6 +15,8 @@ module  Players
         move = [1, 3, 7, 9].detect{|t| !board.taken?(t)}.to_s
       end
 
+    end
+
   end
 
 end
